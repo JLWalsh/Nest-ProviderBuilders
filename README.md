@@ -1,5 +1,12 @@
 ## NestJS Provider Builders
 An object-oriented way of creating providers for NestJS.
+```bash
+npm install nest-provider-builders
+```
+or
+```bash
+yarn add nest-provider-builders
+```
 
 ### Before, you had to:
 Create providers manually, like so:
