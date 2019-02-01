@@ -83,8 +83,8 @@ Create providers manually, like so:
         password: 'passw0rd!'
       }),
       bind<DBConnexion>(DBConnexion).withInjectableFactory(aClassFactory)
-                          .inject('Configuration'),
-                          .build()
+                                    .inject('Configuration'),
+                                    .build()
     ]
   })
 ```
