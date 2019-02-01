@@ -1,0 +1,13 @@
+{
+  "name": "nest-provider-builders",
+  "version": "1.0.0",
+  "description": "A library that facilitates declaring providers for NestJS.",
+  "main": "index.ts",
+  "repository": "git@github.com:JLWalsh/Nest-ProviderBuilders.git",
+  "author": "James L. Walsh",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^5.6.2",
+    "@nestjs/core": "^5.6.2"
+  }
+}
