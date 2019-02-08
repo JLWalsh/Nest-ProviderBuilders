@@ -1,6 +1,6 @@
 {
   "name": "nest-provider-builders",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that facilitates declaring providers for NestJS.",
   "main": "index.ts",
   "repository": "git@github.com:JLWalsh/Nest-ProviderBuilders.git",
@@ -11,7 +11,7 @@
     "rxjs": "^6.4.0",
     "typescript": "^3.3.3"
   },
-  "typings": "dist/index.ts",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest"
