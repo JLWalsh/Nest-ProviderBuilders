@@ -7,7 +7,32 @@
   "author": "James L. Walsh",
   "license": "MIT",
   "dependencies": {
-    "@nestjs/common": "^5.6.2",
-    "@nestjs/core": "^5.6.2"
+    "@nestjs/common": "^5.7.0",
+    "rxjs": "^6.4.0",
+    "typescript": "^3.3.3"
+  },
+  "typings": "dist/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^10.12.22",
+    "ts-jest": "^23.10.5"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "/__tests__/.*\\.(ts)$",
+    "roots": [
+      "<rootDir>/src"
+    ]
   }
 }
