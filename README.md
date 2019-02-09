@@ -1,5 +1,5 @@
 ## NestJS Provider Builders
-An object-oriented way of creating providers for NestJS.
+A library that facilitates declaring providers for [NestJS](https://nestjs.com/). 
 ```bash
 npm install nest-provider-builders
 ```
@@ -8,7 +8,7 @@ or
 yarn add nest-provider-builders
 ```
 
-### Before, you had to:
+## Before, you had to
 Create providers manually, like so:
 ```typescript
   @Module({
@@ -29,6 +29,10 @@ Create providers manually, like so:
     ]
   })
 ```
+
+## Why was this made?
+- To add type safety for declaring providers. The typings of the provider object do not ensure that the value provided will be of the same type as the provide key. This is why you must specify a type when using `bind<T>`, as it will ensure that the binded value is of the same type.
+- To provide (pun intended) better readability. Declaring providers takes a lot of space, so a module with many providers will be uselessly big. By using this library, most providers will be one liners that can be read like a sentence.
 
 ## Binding to a...
 
@@ -65,7 +69,7 @@ Create providers manually, like so:
   })
 ```
 
-### Factory with injectors
+### Factory with injectable dependencies
 ```typescript
   class DBConnexion { constructor(public readonly connexionString: string) };
 
