@@ -2,7 +2,8 @@ import { Type } from "@nestjs/common";
 import { FactoryProvider } from "@nestjs/common/interfaces";
 import FactoryProviderBuilder, { ProviderFactory } from "./FactoryProviderBuilder";
 
-export type Providable<T> = T | string;
+export type Providable<T> = Type<T> | string;
+
 export default class ProviderBuilder<T> {
 
   protected constructor(protected readonly provide: Providable<T>) {}
