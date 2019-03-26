@@ -45,7 +45,17 @@ Create providers manually, like so:
   })
 ```
 
-### Class
+### Class (using `bindClass`)
+```typescript
+  class AClass {};
+
+  @Module({
+    providers: [
+        bindClass(AClass),
+    ]
+  })
+```
+#### Class (using `bind`) 
 ```typescript
   class AClass {};
 
